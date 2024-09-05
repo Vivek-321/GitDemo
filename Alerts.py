@@ -15,7 +15,7 @@ alertText = Alert.text
 assert name in alertText
 print(alertText)
 Alert.accept()
-# Alert.dismiss()
+Alert.dismiss()
 
 
 
