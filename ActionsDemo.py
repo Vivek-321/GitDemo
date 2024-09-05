@@ -7,6 +7,8 @@ from selenium.webdriver import ActionChains
 driver = webdriver.Chrome()
 driver.get("https://rahulshettyacademy.com/AutomationPractice/")
 driver.implicitly_wait(5)
+driver.implicitly_wait(5)
+driver.implicitly_wait(5)
 
 action = ActionChains(driver)
 # action.context_click()
