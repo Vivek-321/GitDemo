@@ -50,6 +50,6 @@ wait.until(expected_conditions.presence_of_element_located((By.CLASS_NAME,"promo
 print(driver.find_element(By.CLASS_NAME, "promoInfo").text)
 
 discountedAmount = float(driver.find_element(By.CSS_SELECTOR,".discountAmt").text)
-# print(discountedAmount)
+print(discountedAmount)
 assert amount > discountedAmount
 # time.sleep(5)
