@@ -5,7 +5,7 @@ pipeline{
             steps{
                 
                 bat '''
-                    Assignment2.py
+                    python Assignment2.py
                 '''
             }
         }
