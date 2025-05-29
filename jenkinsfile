@@ -16,9 +16,13 @@ pipeline{
         }
         success {
             echo "This will run only if the build is successful"
+            archiveArtifacts artifacts: '**/target/*.jar', onlyIfSuccessful: true
         }
         failure {
             echo "This will run only if the build fails"
+            mail to: '25020785@mahindra.com',
+                subject: "FAILED: ${env.JOB_NAME} - Build #${env.BUILD_NUMBER}",
+                body: "Job '${env.JOB_NAME}' (${env.BUILD_URL}) failed."
         }
     }
     
